@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week4</title>
+    <style>
+        table, td, th {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Week 4 Learning</h1>
+    </header>
+    <main>
+        <!-- learning about img tag -->
+         <h2>Image tag example</h2>
+         <img src="./images/coffee-shop.jpg" alt="coffee cup with coffee beans" width="500">
+         <img src="./images/coffee-shop.jpg" title="coffee cup with coffee beans" width="500">
+         <!-- if an image is decorative keep the alt tag empty alt=""-->
+
+         <!-- learning about a tags -->
+         <h2>Link tag example</h2>
+         <p>Here is a link to visit <a href="https://www.google.com" target="_blank">Google Homepage</a>.</p>
+         <a href="./thanks.html">Thank you page.</a>
+         <a href="#cakes">Jump to cakes menu</a>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit necessitatibus, facere consequuntur dolores,
+            porro natus aliquid modi deleniti molestiae possimus nostrum dolore. Dolor rerum,
+            obcaecati eos inventore commodi quae corporis?</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur cum neque facere blanditiis in, nihil eius,
+            facilis laboriosam perspiciatis earum accusantium error odio cumque delectus ad voluptate alias. Magni, facilis.</p>
+         <ul id="cakes">
+            <li>Red Velvet</li>
+            <li>Tiramisu</li>
+            <li>Black Forest</li>
+         </ul>
+         <!-- tables in html -->
+          <h2>Simple HTML Table</h2>
+          <table>
+            <caption>Student grade information</caption>
+            <thead>
+                <tr>
+                    <th>Student name</th>
+                    <th>Course Name</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Smith</td>
+                    <td>Web dev 1</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>Mel</td>
+                    <td>Web dev 2</td>
+                    <td>A+</td>
+                </tr>
+            </tbody>
+          </table>
+          <h2>Merging cells</h2>
+          <table>
+            <thead>
+              <tr>
+                <th rowspan="2">Name</th>
+                <th colspan="2">Scores</th>
+              </tr>
+              <tr>
+                <th>Maths</th>
+                <th>English</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Bob</td>
+                <td>10/10</td>
+                <td>9/10</td>
+              </tr>
+              <tr>
+                <td>Fran</td>
+                <td>8/10</td>
+                <td>10/10</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Fake Data</h3>
+          <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Days</th>
+                    <th colspan="2">Month</th>
+                </tr>
+                <tr>
+                    <th>Mon</th>
+                    <th>Wed</th>
+                    <th>Jan</th>
+                    <th>Sep</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>9</td>
+                    <td>8</td>
+                    <td>7</td>
+                </tr>
+            </tbody>
+          </table>
+
+          <!-- for elements -->
+          <h2>HTML Form Elements</h2>
+          <form action="./thanks.html" method="get">
+            <label for="fullname">Name</label>
+            <input id="fullname" type="text" placeholder="Aira" name="fullname">
+
+            <label for="age">Age:</label>
+            <input id="age" type="number" min="0" max="20" step="2" name="age">
+
+            <label for="message">Your Message</label>
+            <textarea id="message"></textarea>
+
+            <button type="submit">Send</button>
+          </form>
+
+    </main>
+</body>
+</html>
