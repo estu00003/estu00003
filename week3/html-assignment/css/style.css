@@ -1,0 +1,26 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+header, footer{
+    background-color: goldenrod;
+}
+.site-title{
+    color: red;
+}
+li{
+    list-style-type: square;
+}
+li:nth-child(n+1){
+    background-color: yellow;
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    background-color: yellow;
+    border: 20px;
+}
+a:hover{
+    background-color: rgb(107, 164, 214);
+}
