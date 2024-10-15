@@ -1,0 +1,74 @@
+body{
+    background-color: rgb(190, 128, 162);
+}
+/* this is a comment */
+header{
+    background-color: rgb(80, 12, 91);
+    color: rgb(242, 233, 233);
+    padding: 1rem 2rem;
+    /* top and bottom, left and right */
+    /* 1rem = 16px */
+    margin: 1rem;
+}
+#goals{
+    font-weight: 700
+    border: 2px solid darkgreen;
+}
+h1,h2,h3{
+    text-decoration: underline;
+}
+p{
+    font-size: 1.2rem;
+}
+div p{
+    font-size: 0.8rem;
+    color: blue;
+}
+/* to target an id we need to use hash (#) */
+#goals{
+    font-weight: 700;
+    border: 2px solid darkgreen;
+}
+/* to target a class, use a dot or period (.) */
+.highlight{
+    background-color: lavender;
+    border: 2px solid rgb(27, 23, 23)
+}
+.notes{
+    border: 2px solid white;
+}
+li:nth-child(n+1){
+    background-color: darkgrey;
+}
+a{
+    display: block;
+    color: black;
+}
+    a[href="https://algonquincollege.com"]{
+    color: blueviolet;
+}
+a:link {
+    color: cadetblue;
+  }
+  
+  /* selects any <a> that has been visited */
+  a:visited {
+    color: indianred;
+}
+a:hover
+span{
+    color: inherit;
+}
+
+span{
+    color: blue;
+}
+
+span{
+    color: initial;
+}
+
+span{
+    color: unset;
+}
+}
