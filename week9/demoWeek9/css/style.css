@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header, footer{
+    min-height: 100px;
+    background-color: palegoldenrod;
+}
+
+a{
+    font-size: 30px;
+}
+
+main{
+    min-height: 400px;
+    background-color: palegreen;
+    border: 2px solid black;
+}
+
+main div{
+    width: 200px;
+    height: 200px;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Creative-Tail-Animal-mouse.svg/128px-Creative-Tail-Animal-mouse.svg.png);
+    background-repeat: no-repeat;
+}
+
+/* for 650px device size and over */
+@media screen and (min-width: 650px){
+    main{
+        background-color: palevioletred;
+    }
+    footer, header{
+        background-color: palevioletred;
+    }
+    main div {
+        background: url(https://upload.wikimedia.org/wikipedia/commons/3/30/Borneoelephants.jpg);
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px){
+    main{
+        background-color: aqua;
+    }
+}
+
+@media print{
+    a::after{
+        content: " <" attr(href) ">";
+    }
+}
+/* default css without any media 600px - min-width
+    device size is 900px - min-width
+    device size is 1200 - min-width */
+
+
+
+    
+    
