@@ -1,0 +1,33 @@
+.header, .main-content, .footer, .sidebar{
+    background-color: palevioletred;
+    margin: 10px 0;
+}
+
+.header{
+    height: 60px;
+}
+.main-content{
+    height: 200px;
+}
+.sidebar{
+    height: 120px;
+}
+.footer{
+    height: 45px;
+}
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (min-width: 700px){
+    .main-content{
+        width: 70%;
+        float: left;
+    }
+    .sidebar{
+        width: 28%;
+        float: right;
+    }
+}
