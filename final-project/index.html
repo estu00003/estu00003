@@ -3,39 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Three Star Media</title>
 </head>
 <body>
     <header>
-        <div class="container">
-            <img src="./images/logo.png" alt="Logo" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="searchinput">
-            <input type="text" placeholder="Search" name="Search">
-            <button> <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
+        <div class="bleeding-background">
+            <div class="topnav">
+                <img src="./images/logo.png" alt="Logo" class="logo" width="50%">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#team">Team</a>
+                <a href="#contact">Contact</a>
+                <div class="searchinput">
+                    <input type="text" placeholder="Search" name="Search">
+                    <button> <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
+                </div>
+            </div>
         </div>
     </header>
     <main>
         <section id="home">
-            <img src="./images/main-banner.jpg" alt="main banner of the page">
-            <h1>Welcome to Three Star Media</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae nihil itaque eligendi
-            distinctio enim eveniet ipsum, commodi illo molestias expedita odit veniam laborum saepe,
-            provident eaque nostrum non rerum illum.</p>
+            <div class="floating-box">
+                <h1>Welcome to Three Star Media</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae nihil itaque eligendi
+                distinctio enim eveniet ipsum, commodi illo molestias expedita odit veniam laborum saepe,
+                provident eaque nostrum non rerum illum.</p>
+                <div class="button2">
+                    <a href="#connect">Connect with us ►</a>
+                </div>
+            </div>
         </section>
-        <div class="buttonconnect">
-            <button>Connect with us<i class="<i class="fa-solid fa-caret-right"></i></button>
-        </div>
-        <section>
             <section id="about">
                 <img src="./images/about-us.jpg" alt="about us">
                 <h2>About us</h2>
@@ -45,69 +47,73 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laudantium a sunt, aliquam mollitia saepe quia deserunt,
                 libero quibusdam quo incidunt iste error, consequuntur molestias vitae consequatur unde repudiandae totam.</p>
             </section>
+
             <section id="services">
+                <div class="services-container">
                 <h2>Our Services</h2>
+                <div class="service-item">
                     <img src="./images/digital.jpg" alt="digital transformation">
-                    <h2>Digital Transformation</h2>
+                    <h3>Digital Transformation</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Similique consequuntur pariatur quod omnis laudantium repellendus corrupti tenetur repudiandae,
                     quasi totam non sapiente quia consequatur ab soluta reiciendis a! Eveniet, rerum?</p>
-                    <div class="buttonsimilar">
-                        <button>Digital Plans<i class="fa-solid fa-right-long" aria-hidden="true"></i></button>
-                    </div>
+                    <a href="digital-plans" class="link-button">Digital Plans <i class="fa-solid fa-caret-right" aria-hidden="true"></i></a>
+                </div>
                 
+                <div class="service-item">
                     <img src="./images/marketing.jpg" alt="marketing">
-                    <h2>Marketing</h2>
+                    <h3>Marketing</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ipsam incidunt, error odit autem voluptas illum temporibus excepturi eligendi accusamus,
                     possimus sapiente, molestiae reiciendis omnis? Laudantium alias totam nemo omnis!</p>
-                    <div class="buttonsimilar">
-                        <button>Marketing Plans<i class="fa-solid fa-right-long" aria-hidden="true"></i></button>
-                    </div>
-
+                    <a href="marketing-plans" class="link-button">Marketing Plans <i class="fa-solid fa-caret-right" aria-hidden="true"></i></a>
+                </div>
+                
+                <div class="service-item">
                     <img src="./images/video.jpg" alt="video production">
-                    <h2>Video Production</h2>
+                    <h3>Video Production</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates similique amet perferendis mollitia aliquid sapiente vel ab modi,
                     ut unde laudantium nesciunt quos rerum soluta sint corrupti? Aliquid, dolor? Officia.</p>
-                    <div class="buttonsimilar">
-                        <button>Video Plans<i class="fa-solid fa-right-long" aria-hidden="true"></i></button>
-                    </div>
+                    <a href="video-production" class="link-button">Video Production<i class="fa-solid fa-caret-right" aria-hidden="true"></i></a>
+                </div>
 
+                <div class="service-item">
                     <img src="./images/web.jpg" alt="web development">
-                    <h2>Web Development</h2>
+                    <h3>Web Development</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates similique amet perferendis mollitia aliquid sapiente vel ab modi,
                     ut unde laudantium nesciunt quos rerum soluta sint corrupti? Aliquid, dolor? Officia.</p>
-                    <div class="buttonsimilar">
-                        <button>Web Plans<i class="fa-solid fa-right-long" aria-hidden="true"></i></button>
-                    </div>
+                    <a href="web-development" class="link-button">Web Development<i class="fa-solid fa-caret-right" aria-hidden="true"></i></a>
+                </div>
 
+                <div class="service-item">
                     <img src="./images/print.jpg" alt="print">
-                    <h2>Print</h2>
+                    <h3>Print</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates similique amet perferendis mollitia aliquid sapiente vel ab modi,
                     ut unde laudantium nesciunt quos rerum soluta sint corrupti? Aliquid, dolor? Officia.</p>
-                    <div class="buttonsimilar">
-                        <button>Print Plans<i class="fa-solid fa-right-long" aria-hidden="true"></i></button>
-                    </div>
+                    <a href="print-plans" class="link-button">Print Plans<i class="fa-solid fa-caret-right" aria-hidden="true"></i></a>
+                </div>
+            </section>
 
+            <section id="our-vision">
+                <div class="vision">
                     <img src="./images/vision.jpg" alt="our vision">
-                    <h2>Our Vision</h2>
+                    <h3>Our Vision</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates similique amet perferendis mollitia aliquid sapiente vel ab modi,
                     ut unde laudantium nesciunt quos rerum soluta sint corrupti? Aliquid, dolor? Officia.</p>
-                    <div class="learnmorebutton">
-                        <button>Learn More<i class="fa-solid fa-right-long" aria-hidden="true"></i></button>
-                    </div>
+                    <a href="learn-more" class="link-button">Learn More<i class="fa-solid fa-caret-right" aria-hidden="true"></i></a>
+                </div>
             </section>
 
             <div class="teaminformation" id="team">
-                <h3>Our Team</h3>
+                <h4>Our Team</h4>
                 <img src="./images/john.jpg" alt="this is john">
-                <h3>John Doe</h3>
-                <h3>CEO and Co-owner</h3>
+                <h5>John Doe</h5>
+                <h6>CEO and Co-owner</h6>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta fugit accusamus incidunt voluptas veniam illum exercitationem porro
                 ipsum vero nostrum, repellendus cumque, voluptatibus sunt. Nam accusantium corporis ex molestiae aliquid!</p>
 
                 <img src="./images/bob.jpg" alt="this is bob">
-                <h3>Bob Rite</h3>
-                <h3>CFO and Co-owner</h3>
+                <h5>Bob Rite</h5>
+                <h6>CFO and Co-owner</h6>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta fugit accusamus incidunt voluptas veniam illum exercitationem porro
                 ipsum vero nostrum, repellendus cumque, voluptatibus sunt. Nam accusantium corporis ex molestiae aliquid!</p>
             </div>
@@ -134,9 +140,10 @@
                 <button type="submit">Send</button>
             </form>
 
+            
             <div class="table">
                 <h1>Hours of Operation</h1>
-                <table>
+                <table class="table">
                     <tbody>
                         <tr>
                             <th>Days</th>
