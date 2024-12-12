@@ -1,0 +1,359 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    margin: 0;
+}
+
+/* Full-width section for bleeding background */
+.bleeding-background {
+    background-color: #222; 
+    padding: 0 10%;
+  }
+
+/* Container for Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 10%;
+    padding: 0 10%;
+    font-size: 
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    width: 100px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Search Input */
+header .searchinput {
+    display: flex;
+    gap: 10px;
+}
+
+header .searchinput input {
+    padding: 5px;
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid #c78c06;
+}
+
+header .searchinput button {
+    background-color: #c78c06;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+#home {
+    text-align: center;
+    background: url('../images/main-banner.jpg') no-repeat center/cover;
+    color: white;
+    padding: 50px 20px;
+}
+
+#home h1 {
+    font-size: 3rem;
+    text-align: left;
+}
+
+#home p {
+    margin-top: 15px;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.buttonconnect {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonconnect button {
+    background-color: #c78c06;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* About Section */
+#about {
+    background-color: #ffe6ac;
+    padding: 20px;
+    text-align: center;
+}
+
+#about img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#about h2 {
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+/* Services Section */
+#services {
+    padding: 20px 10px;
+    flex-direction: row;
+}
+
+#services h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #ffe6ac;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.service-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.service-item h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.link-button {
+    background-color: #c78c06;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Our Vision Section */
+#our-vision h3 {
+    font-size: large;
+    font-weight: bold;
+}
+
+/* Team Section */
+#team h4 {
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+#team h5 {
+    font-size: large;
+    font-weight: bold;
+}
+
+#team h6 {
+    font-weight: bold;
+}
+
+#team img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 20px;
+    text-align: center;
+}
+
+#contact h1 {
+    font-size: large;
+    font-weight: bold;
+}
+
+#contact h2 {
+    font-weight: bold;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact input,
+#contact textarea {
+    padding: 10px;
+    border: 1px solid #c78c06;
+    border-radius: 5px;
+}
+
+#contact button {
+    background-color: #c78c06;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hours of Operation */
+#table, th, td {
+    border: 1px black ;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #222222;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px; 
+    width: 100%  
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    color: #c78b07;
+    text-align: center;
+    padding:15px 2%;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 20px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #c78b07;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .logo {
+    width: 50%;
+}
+
+.floating-box {
+    display: inline-block;
+    width: 90%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+ /* Style the links inside the navigation bar */
+ .button2 a {
+    color: black;
+    text-align: center;
+    padding:25px;
+    text-decoration: none;
+    font-size: 17px;
+    background: #c78b07;
+    float: left;
+  }
+  
+  /* Change the color of links on hover */
+  .button2 a:hover {
+    background-color: black;
+    color: #c78b07;
+  }
+  
+  /* Add a color to the active/current link */
+  .button2 a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr:hover {
+    background-color: #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid black;
+}
+th {
+    background-color: #FFE6AC;
+    color: white;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 720px) and (max-width: 1200px) {
+    header .searchinput input {
+        width: 250px;
+    }
+
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #contact form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #contact input,
+    #contact textarea {
+        width: 45%;
+    }
+}
